@@ -28,6 +28,7 @@ class Main extends PluginBase{
 	if(!is_dir($this->getDataFolder())){
 	$this->getLogger()->info($this->getPrefix().T::GOLD."No se ha encontrado la carpeta del juego, creando nueva...");
 	@mkdir($this->getDataFolder());
+	@mkdir($this->getDataFolder()."Games/");
 	}
 	}
 	
